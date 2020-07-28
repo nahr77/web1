@@ -1,8 +1,60 @@
+body{
+    margin: 0px;
+}
+
+h1{
+    font-size: 60px;
+    text-align: center; /* 텍스트를 가운데로 이동시켜준다. */
+}
+
 ol{
     list-style: none;
+    margin: 0px;
+    padding-left: 15px;
 }
 
 a{
     color:#353b48;
-    text-decoration: none;
+    text-decoration: none; 
+}
+
+#home{
+    border-bottom: 3px solid grey;
+    padding: 0px;
+    margin: 0px;
+}
+
+#laptop{
+    border-right: 3px solid grey;
+    width: 20%;
+    margin: 0px;
+    padding: 15px 15px 15px 10px;
+}
+
+#grid{
+    display: grid;
+    grid-template-columns: 150px 1fr;
+}
+
+#article{
+    padding-left: 20px;
+}
+
+#grid ol{
+    padding-left: 10px;
+    padding-right: 100px;
+}
+
+@media(max-width : 600px){
+    h1{
+        font-size: 30px;
+    }
+    #grid{
+        display: block;
+    }
+    #laptop{
+        border-right: none;
+        border-bottom: 3px solid grey;
+        width: auto;
+    }
 }
